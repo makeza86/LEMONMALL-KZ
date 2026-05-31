@@ -3,185 +3,170 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Заявка отправлена — HUAGE & Lemon Mall</title>
+  <title>Заявка отправлена — JIMON GROUP & JimonGramm</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
   <style>
-    :root {
-      --bg-main: #050509;
-      --gold: #f6c73c;
-      --gold-soft: #ffd76a;
-      --text-main: #ffffff;
-      --text-soft: #b7b7c4;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
+    * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      margin: 0;
-      font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      background: radial-gradient(circle at top, #2a2010 0, #050509 40%, #000 100%);
-      color: var(--text-main);
+      font-family: 'Manrope', sans-serif;
+      background: #060a0e;
+      color: #e2e8f0;
       min-height: 100vh;
       display: flex;
       align-items: center;
       justify-content: center;
       overflow: hidden;
+      background-image:
+        radial-gradient(ellipse 70% 50% at 20% 0%, rgba(74,222,128,0.10) 0%, transparent 60%),
+        radial-gradient(ellipse 50% 40% at 80% 100%, rgba(212,168,76,0.08) 0%, transparent 60%),
+        radial-gradient(circle, rgba(74,222,128,0.06) 1px, transparent 1px),
+        radial-gradient(circle, rgba(74,222,128,0.03) 1px, transparent 1px);
+      background-size: auto, auto, 22px 22px, 55px 55px;
+      background-position: 0 0, 0 0, 0 0, 11px 11px;
     }
 
+    /* Конфетти — зелёное */
     .confetti {
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
+      position: fixed; inset: 0; pointer-events: none;
       background-image:
-        radial-gradient(circle, rgba(246,199,60,0.55) 0, transparent 55%),
-        radial-gradient(circle, rgba(255,255,255,0.18) 0, transparent 55%);
-      background-size: 14px 14px, 18px 18px;
+        radial-gradient(circle, rgba(74,222,128,0.45) 0, transparent 55%),
+        radial-gradient(circle, rgba(212,168,76,0.20) 0, transparent 55%);
+      background-size: 12px 12px, 18px 18px;
       mix-blend-mode: screen;
       opacity: 0;
-      animation: confettiFade 2.8s ease-out forwards;
+      animation: confettiFade 3s ease-out forwards;
     }
-
     @keyframes confettiFade {
-      0% { opacity: 0; transform: translateY(-20px); }
-      15% { opacity: 1; }
-      100% { opacity: 0; transform: translateY(20px); }
+      0%   { opacity: 0; transform: translateY(-24px); }
+      15%  { opacity: 1; }
+      100% { opacity: 0; transform: translateY(24px); }
     }
 
     .card {
       position: relative;
-      max-width: 460px;
-      width: 90%;
-      padding: 26px 22px 24px;
-      border-radius: 24px;
+      max-width: 480px; width: 92%;
+      padding: 36px 28px 32px;
+      border-radius: 28px;
       background:
-        radial-gradient(circle at top left, rgba(255,245,214,0.24), transparent 60%),
-        linear-gradient(135deg, rgba(30,24,12,0.98), rgba(60,44,18,0.98));
-      border: 1px solid rgba(246,199,60,0.9);
+        radial-gradient(ellipse at top left, rgba(74,222,128,0.10), transparent 60%),
+        linear-gradient(160deg, rgba(12,28,18,0.99), rgba(6,14,10,0.99));
+      border: 1px solid rgba(74,222,128,0.35);
       box-shadow:
-        0 0 26px rgba(246,199,60,0.75),
-        0 26px 60px rgba(0,0,0,0.9);
+        0 0 40px rgba(74,222,128,0.18),
+        0 0 80px rgba(74,222,128,0.06),
+        0 30px 60px rgba(0,0,0,0.8);
       text-align: center;
-      animation: cardIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-      transform: translateY(30px) scale(0.96);
+      animation: cardIn 0.8s cubic-bezier(0.16,1,0.3,1) forwards;
+      transform: translateY(32px) scale(0.95);
       opacity: 0;
     }
-
     @keyframes cardIn {
-      to {
-        transform: translateY(0) scale(1);
-        opacity: 1;
-      }
+      to { transform: translateY(0) scale(1); opacity: 1; }
     }
 
+    /* Вращающийся значок */
     .badge {
-      width: 70px;
-      height: 70px;
+      width: 76px; height: 76px;
       border-radius: 50%;
-      margin: 0 auto 14px;
-      background:
-        conic-gradient(from 220deg, #ffe9a9, #f6c73c, #f1b51f, #ffe9a9);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      box-shadow: 0 0 24px rgba(246,199,60,0.9);
-      animation: spinLight 4s linear infinite;
+      margin: 0 auto 20px;
+      background: conic-gradient(from 200deg, #86efac, #4ade80, #22c55e, #4ade80, #86efac);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 0 30px rgba(74,222,128,0.7), 0 0 60px rgba(74,222,128,0.3);
+      animation: spinLight 5s linear infinite;
     }
-
-    .badge-inner {
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      background: #050509;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-    }
-
     @keyframes spinLight {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
+      to { transform: rotate(360deg); }
+    }
+    .badge-inner {
+      width: 58px; height: 58px;
+      border-radius: 50%;
+      background: #060a0e;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px;
     }
 
     h1 {
-      font-size: 22px;
-      margin: 4px 0 6px;
-      color: var(--gold);
+      font-size: 22px; font-weight: 800;
+      margin-bottom: 10px;
+      background: linear-gradient(135deg, #4ade80, #86efac);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
     }
 
     .subtitle {
-      font-size: 15px;
-      color: var(--text-soft);
-      margin-bottom: 14px;
+      font-size: 15px; color: #94a3b8;
+      margin-bottom: 18px; line-height: 1.65;
     }
 
     .highlight {
-      font-size: 14px;
-      color: #fff5d6;
-      background: rgba(0,0,0,0.45);
-      padding: 8px 10px;
-      border-radius: 12px;
-      border: 1px solid rgba(246,199,60,0.5);
+      font-size: 14px; color: #d4e8c0;
+      background: rgba(74,222,128,0.06);
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(74,222,128,0.2);
       margin-bottom: 14px;
+      line-height: 1.6;
     }
 
     .small {
-      font-size: 13px;
-      color: var(--text-soft);
-      margin-bottom: 18px;
+      font-size: 13px; color: #64748b;
+      margin-bottom: 24px; line-height: 1.6;
     }
 
     .buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
+      display: flex; flex-wrap: wrap;
+      gap: 10px; justify-content: center;
     }
 
     .btn-main {
-      border: none;
-      cursor: pointer;
-      border-radius: 999px;
-      padding: 10px 20px;
-      font-size: 14px;
-      font-weight: 600;
+      border: none; cursor: pointer;
+      border-radius: 999px; padding: 12px 24px;
+      font-size: 14px; font-weight: 700;
+      font-family: 'Manrope', sans-serif;
       text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: linear-gradient(135deg, var(--gold-soft), var(--gold));
+      display: inline-flex; align-items: center; gap: 6px;
+      background: linear-gradient(135deg, #2ecc71, #4ade80);
       color: #000;
-      box-shadow: 0 0 18px rgba(246,199,60,0.8);
+      box-shadow: 0 0 20px rgba(74,222,128,0.5);
+      transition: all 0.2s;
+    }
+    .btn-main:hover {
+      box-shadow: 0 0 36px rgba(74,222,128,0.7);
+      transform: translateY(-1px);
     }
 
     .btn-ghost {
-      border-radius: 999px;
-      padding: 9px 18px;
-      font-size: 13px;
-      border: 1px solid rgba(246,199,60,0.5);
-      background: transparent;
-      color: var(--text-soft);
+      border-radius: 999px; padding: 11px 20px;
+      font-size: 13px; font-weight: 600;
+      font-family: 'Manrope', sans-serif;
+      border: 1px solid rgba(74,222,128,0.3);
+      background: rgba(74,222,128,0.05);
+      color: #94a3b8;
       text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
+      display: inline-flex; align-items: center; gap: 6px;
+      transition: all 0.2s;
+    }
+    .btn-ghost:hover {
+      border-color: rgba(74,222,128,0.5);
+      color: #4ade80;
+      background: rgba(74,222,128,0.1);
     }
 
-    .btn-main span,
-    .btn-ghost span {
-      font-size: 16px;
+    .brand-tag {
+      margin-top: 28px;
+      font-size: 11px; font-weight: 700;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: #4ade80; opacity: 0.4;
     }
 
     @media (max-width: 480px) {
-      h1 {
-        font-size: 19px;
-      }
-      .card {
-        padding: 22px 18px 20px;
-      }
+      h1 { font-size: 19px; }
+      .card { padding: 28px 20px 26px; }
     }
   </style>
 </head>
@@ -191,28 +176,36 @@
 
   <div class="card">
     <div class="badge">
-      <div class="badge-inner">✔</div>
+      <div class="badge-inner">✦</div>
     </div>
-    <h1>Поздравляем! Заявка отправлена</h1>
+
+    <h1>Заявка принята!</h1>
+
     <div class="subtitle">
-      Официальный партнёр <strong>HUAGE & Lemon Mall</strong> свяжется с вами в ближайшее время.
+      Куратор вашего региона из <strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong><br>
+      свяжется с вами в ближайшее время.
     </div>
+
     <div class="highlight">
-      Желаем вам удачи, правильных решений и сильного окружения в новом проекте 🚀
+      Добро пожаловать в экосистему будущего 🌿<br>
+      Вы сделали правильный шаг — впереди много интересного.
     </div>
+
     <div class="small">
-      Если партнёр не ответит в течение 24 часов, вы можете повторно оставить заявку
-      или написать напрямую в WhatsApp.
+      Пока ждёте — можете познакомиться с ИИ-консультантом Пэн.<br>
+      Она ответит на вопросы о здоровье прямо сейчас, бесплатно.
     </div>
 
     <div class="buttons">
-      <a href="https://lemonmall.kz" class="btn-main">
-        <span>←</span> Вернуться на сайт
+      <a href="https://jimongroup.kz" class="btn-main">
+        ← Вернуться на сайт
       </a>
-      <a href="https://wa.me/77085080140" target="_blank" class="btn-ghost">
-        <span>💬</span> Написать в WhatsApp
+      <a href="https://jimongramm.com" target="_blank" class="btn-ghost">
+        🧠 Поговорить с Пэн
       </a>
     </div>
+
+    <div class="brand-tag">JIMON GROUP × JimonGramm</div>
   </div>
 
 </body>
