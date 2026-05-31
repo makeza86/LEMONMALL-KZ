@@ -1,20 +1,167 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
-    <!-- Главная страница -->
-    <url>
-        <loc>https://lemonmall.kz/</loc>
-        <lastmod>2025-01-20</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
+  <!-- RU — дефолт -->
+  <url>
+    <loc>https://jimongroup.kz/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk"   href="https://jimongroup.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en"   href="https://jimongroup.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh"   href="https://jimongroup.kz/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"   href="https://jimongroup.kz/tr/"/>
+    <xhtml:link rel="alternate" hreflang="mn"   href="https://jimongroup.kz/mn/"/>
+    <xhtml:link rel="alternate" hreflang="uz"   href="https://jimongroup.kz/uz/"/>
+    <xhtml:link rel="alternate" hreflang="tg"   href="https://jimongroup.kz/tj/"/>
+    <xhtml:link rel="alternate" hreflang="uk"   href="https://jimongroup.kz/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jimongroup.kz/"/>
+  </url>
 
-    <!-- Страница благодарности -->
-    <url>
-        <loc>https://lemonmall.kz/thank-you.html</loc>
-        <lastmod>2025-01-20</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+  <!-- KK — Қазақша -->
+  <url>
+    <loc>https://jimongroup.kz/kz/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk"   href="https://jimongroup.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en"   href="https://jimongroup.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh"   href="https://jimongroup.kz/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"   href="https://jimongroup.kz/tr/"/>
+    <xhtml:link rel="alternate" hreflang="mn"   href="https://jimongroup.kz/mn/"/>
+    <xhtml:link rel="alternate" hreflang="uz"   href="https://jimongroup.kz/uz/"/>
+    <xhtml:link rel="alternate" hreflang="tg"   href="https://jimongroup.kz/tj/"/>
+    <xhtml:link rel="alternate" hreflang="uk"   href="https://jimongroup.kz/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jimongroup.kz/"/>
+  </url>
+
+  <!-- EN — English -->
+  <url>
+    <loc>https://jimongroup.kz/en/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk"   href="https://jimongroup.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en"   href="https://jimongroup.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh"   href="https://jimongroup.kz/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"   href="https://jimongroup.kz/tr/"/>
+    <xhtml:link rel="alternate" hreflang="mn"   href="https://jimongroup.kz/mn/"/>
+    <xhtml:link rel="alternate" hreflang="uz"   href="https://jimongroup.kz/uz/"/>
+    <xhtml:link rel="alternate" hreflang="tg"   href="https://jimongroup.kz/tj/"/>
+    <xhtml:link rel="alternate" hreflang="uk"   href="https://jimongroup.kz/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jimongroup.kz/"/>
+  </url>
+
+  <!-- ZH — 中文 -->
+  <url>
+    <loc>https://jimongroup.kz/zh/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk"   href="https://jimongroup.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en"   href="https://jimongroup.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh"   href="https://jimongroup.kz/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"   href="https://jimongroup.kz/tr/"/>
+    <xhtml:link rel="alternate" hreflang="mn"   href="https://jimongroup.kz/mn/"/>
+    <xhtml:link rel="alternate" hreflang="uz"   href="https://jimongroup.kz/uz/"/>
+    <xhtml:link rel="alternate" hreflang="tg"   href="https://jimongroup.kz/tj/"/>
+    <xhtml:link rel="alternate" hreflang="uk"   href="https://jimongroup.kz/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jimongroup.kz/"/>
+  </url>
+
+  <!-- TR — Türkçe -->
+  <url>
+    <loc>https://jimongroup.kz/tr/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk"   href="https://jimongroup.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en"   href="https://jimongroup.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh"   href="https://jimongroup.kz/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"   href="https://jimongroup.kz/tr/"/>
+    <xhtml:link rel="alternate" hreflang="mn"   href="https://jimongroup.kz/mn/"/>
+    <xhtml:link rel="alternate" hreflang="uz"   href="https://jimongroup.kz/uz/"/>
+    <xhtml:link rel="alternate" hreflang="tg"   href="https://jimongroup.kz/tj/"/>
+    <xhtml:link rel="alternate" hreflang="uk"   href="https://jimongroup.kz/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jimongroup.kz/"/>
+  </url>
+
+  <!-- MN — Монгол -->
+  <url>
+    <loc>https://jimongroup.kz/mn/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk"   href="https://jimongroup.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en"   href="https://jimongroup.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh"   href="https://jimongroup.kz/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"   href="https://jimongroup.kz/tr/"/>
+    <xhtml:link rel="alternate" hreflang="mn"   href="https://jimongroup.kz/mn/"/>
+    <xhtml:link rel="alternate" hreflang="uz"   href="https://jimongroup.kz/uz/"/>
+    <xhtml:link rel="alternate" hreflang="tg"   href="https://jimongroup.kz/tj/"/>
+    <xhtml:link rel="alternate" hreflang="uk"   href="https://jimongroup.kz/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jimongroup.kz/"/>
+  </url>
+
+  <!-- UZ — O'zbekcha -->
+  <url>
+    <loc>https://jimongroup.kz/uz/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk"   href="https://jimongroup.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en"   href="https://jimongroup.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh"   href="https://jimongroup.kz/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"   href="https://jimongroup.kz/tr/"/>
+    <xhtml:link rel="alternate" hreflang="mn"   href="https://jimongroup.kz/mn/"/>
+    <xhtml:link rel="alternate" hreflang="uz"   href="https://jimongroup.kz/uz/"/>
+    <xhtml:link rel="alternate" hreflang="tg"   href="https://jimongroup.kz/tj/"/>
+    <xhtml:link rel="alternate" hreflang="uk"   href="https://jimongroup.kz/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jimongroup.kz/"/>
+  </url>
+
+  <!-- TG — Тоҷикӣ -->
+  <url>
+    <loc>https://jimongroup.kz/tj/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk"   href="https://jimongroup.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en"   href="https://jimongroup.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh"   href="https://jimongroup.kz/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"   href="https://jimongroup.kz/tr/"/>
+    <xhtml:link rel="alternate" hreflang="mn"   href="https://jimongroup.kz/mn/"/>
+    <xhtml:link rel="alternate" hreflang="uz"   href="https://jimongroup.kz/uz/"/>
+    <xhtml:link rel="alternate" hreflang="tg"   href="https://jimongroup.kz/tj/"/>
+    <xhtml:link rel="alternate" hreflang="uk"   href="https://jimongroup.kz/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jimongroup.kz/"/>
+  </url>
+
+  <!-- UK — Українська -->
+  <url>
+    <loc>https://jimongroup.kz/ua/</loc>
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
+    <xhtml:link rel="alternate" hreflang="kk"   href="https://jimongroup.kz/kz/"/>
+    <xhtml:link rel="alternate" hreflang="en"   href="https://jimongroup.kz/en/"/>
+    <xhtml:link rel="alternate" hreflang="zh"   href="https://jimongroup.kz/zh/"/>
+    <xhtml:link rel="alternate" hreflang="tr"   href="https://jimongroup.kz/tr/"/>
+    <xhtml:link rel="alternate" hreflang="mn"   href="https://jimongroup.kz/mn/"/>
+    <xhtml:link rel="alternate" hreflang="uz"   href="https://jimongroup.kz/uz/"/>
+    <xhtml:link rel="alternate" hreflang="tg"   href="https://jimongroup.kz/tj/"/>
+    <xhtml:link rel="alternate" hreflang="uk"   href="https://jimongroup.kz/ua/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://jimongroup.kz/"/>
+  </url>
 
 </urlset>
