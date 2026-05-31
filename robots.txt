@@ -1,5 +1,15 @@
 User-agent: *
 Allow: /
-Disallow: /videos/
 
-Sitemap: https://lemonmall.kz/sitemap.xml
+# Языковые версии
+Allow: /kz/
+Allow: /en/
+Allow: /zh/
+Allow: /tr/
+Allow: /mn/
+Allow: /uz/
+Allow: /tj/
+Allow: /ua/
+
+# Sitemap
+Sitemap: https://jimongroup.kz/sitemap.xml
