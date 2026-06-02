@@ -1453,8 +1453,8 @@
     for(let i=0;i<drops.length;i++){
       const ch = chars[Math.floor(Math.random()*chars.length)];
       const y = drops[i]*fs;
-      if(Math.random()>0.9){ ctx.fillStyle='#ffffff'; ctx.shadowColor='#4ade80'; ctx.shadowBlur=12; }
-      else { ctx.fillStyle='#4ade80'; ctx.shadowColor='#4ade80'; ctx.shadowBlur=6; }
+     if(Math.random()>0.9){ ctx.fillStyle='#ffffff'; ctx.shadowColor='#4ade80'; ctx.shadowBlur=20; }
+else { ctx.fillStyle='#4ade80'; ctx.shadowColor='#4ade80'; ctx.shadowBlur=12; }
       ctx.fillText(ch, i*fs, y);
       ctx.shadowBlur=0;
       if(y>c.height && Math.random()>0.97) drops[i]=0;
@@ -1463,7 +1463,7 @@
   }
 
   function startMatrix(){
-    c.style.opacity='0.18';
+    c.style.opacity='0.45';
     if(!animId) animId = setInterval(draw, 50);
   }
 
