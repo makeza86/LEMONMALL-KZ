@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Политика конфиденциальности — JIMON GROUP & JimonGramm</title>
+  <meta name="description" content="Политика конфиденциальности сайта jimongroup.kz — как мы собираем и защищаем ваши данные." />
+  <meta name="robots" content="noindex, follow" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Serif:ital@0;1&display=swap" rel="stylesheet" />
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2SBBFBYH8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D2SBBFBYH8');
+  </script>
+
+  <style>
+    :root {
+      --bg: #060a0e;
+      --bg2: #0a1018;
+      --green: #4ade80;
+      --green-dim: rgba(74, 222, 128, 0.12);
+      --gold: #d4a84c;
+      --gold-dim: rgba(212, 168, 76, 0.15);
+      --text: #e2e8f0;
+      --text-muted: #94a3b8;
+      --border: rgba(74, 222, 128, 0.15);
+      --border-gold: rgba(212, 168, 76, 0.2);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Manrope', sans-serif;
+      font-size: 15px;
+      line-height: 1.8;
+      min-height: 100vh;
+    }
+
+    /* Dot grid background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(74,222,128,0.20) 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(6, 10, 14, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+    }
+
+    .header-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      border: 1px solid var(--border-gold);
+    }
+
+    .header-title {
+      font-size: 14px;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--green), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .back-btn {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 6px 14px;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      transition: all 0.2s;
+    }
+    .back-btn:hover {
+      color: var(--green);
+      border-color: var(--green);
+    }
+
+    /* Main content */
+    main {
+      position: relative;
+      z-index: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* Page title */
+    .page-title {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--green) 0%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+    }
+
+    .page-meta {
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    /* Section */
+    .section {
+      margin-bottom: 36px;
+    }
+
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 3px;
+      height: 16px;
+      background: var(--gold);
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+
+    p {
+      color: var(--text);
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 10px;
+    }
+
+    ul li {
+      color: var(--text);
+      padding: 4px 0 4px 20px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: '—';
+      position: absolute;
+      left: 0;
+      color: var(--green);
+      font-weight: 700;
+    }
+
+    a {
+      color: var(--green);
+      text-decoration: none;
+    }
+    a:hover { text-decoration: underline; }
+
+    /* Info card */
+    .info-card {
+      background: var(--green-dim);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 36px;
+    }
+
+    .info-card p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .info-card strong {
+      color: var(--green);
+    }
+
+    /* Contact block */
+    .contact-block {
+      background: var(--gold-dim);
+      border: 1px solid var(--border-gold);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-top: 40px;
+    }
+
+    .contact-block h2 {
+      color: var(--gold);
+    }
+
+    .contact-block p {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    .contact-block a {
+      color: var(--gold);
+    }
+
+    /* Footer */
+    footer {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      padding: 24px;
+      border-top: 1px solid var(--border);
+      color: var(--text-muted);
+      font-size: 12px;
+    }
+
+    footer a {
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a class="header-brand" href="/">
+      <img class="header-logo" src="images/logo-jimon.png" alt="JIMON GROUP" onerror="this.style.display='none'" />
+      <span class="header-title">JIMON GROUP & JimonGramm</span>
+    </a>
+    <a class="back-btn" href="/">← На главную</a>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1 class="page-title">Политика конфиденциальности</h1>
+    <p class="page-meta">Последнее обновление: 3 июня 2026 г. &nbsp;·&nbsp; Сайт jimongroup.kz</p>
+
+    <div class="info-card">
+      <p>Настоящая политика описывает, какие данные собирает сайт <strong>jimongroup.kz</strong>, как они используются и защищаются. Используя сайт, вы соглашаетесь с условиями настоящей политики.</p>
+    </div>
+
+    <div class="section">
+      <h2>1. Администратор сайта</h2>
+      <p>Сайт <strong>jimongroup.kz</strong> управляется администратором — независимым партнёром экосистемы JIMON GROUP. Сайт является информационным ресурсом и платформой для привлечения партнёров и клиентов.</p>
+      <p>По вопросам, связанным с персональными данными, обращайтесь: <a href="mailto:info@jimongroup.kz">info@jimongroup.kz</a></p>
+    </div>
+
+    <div class="section">
+      <h2>2. Какие данные мы собираем</h2>
+      <p>При заполнении формы заявки на сайте мы собираем следующие данные, которые вы предоставляете добровольно:</p>
+      <ul>
+        <li>Имя и фамилия</li>
+        <li>Возраст и пол</li>
+        <li>Страна и город проживания</li>
+        <li>Профессия или сфера деятельности</li>
+        <li>Контактный номер WhatsApp или иной способ связи</li>
+      </ul>
+      <p>Также автоматически собираются технические данные при посещении сайта (через Google Analytics 4):</p>
+      <ul>
+        <li>IP-адрес (в анонимизированном виде)</li>
+        <li>Тип устройства и браузер</li>
+        <li>Страницы, которые вы посетили</li>
+        <li>Источник перехода на сайт</li>
+        <li>Время, проведённое на сайте</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>3. Цели использования данных</h2>
+      <p>Собранные данные используются исключительно в следующих целях:</p>
+      <ul>
+        <li>Связь с вами для ответа на заявку или консультации</li>
+        <li>Подбор подходящего предложения (партнёрство или продукция)</li>
+        <li>Улучшение качества работы сайта на основе аналитики</li>
+        <li>Направление вас на платформу JimonGramm для дальнейшего взаимодействия</li>
+      </ul>
+      <p>Мы не используем ваши данные для автоматизированного принятия решений и профилирования.</p>
+    </div>
+
+    <div class="section">
+      <h2>4. Передача данных третьим лицам</h2>
+      <p>Ваши данные не продаются и не передаются третьим лицам в коммерческих целях. Данные могут быть переданы только в следующих случаях:</p>
+      <ul>
+        <li><strong>Supabase</strong> — облачная база данных для хранения заявок (серверы расположены в ЕС/США, соответствуют GDPR)</li>
+        <li><strong>Google Analytics</strong> — анонимная аналитика поведения пользователей на сайте</li>
+        <li><strong>По требованию закона</strong> — если это необходимо по решению суда или уполномоченных органов</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>5. Cookies и технологии отслеживания</h2>
+      <p>Сайт использует файлы cookie для корректной работы Google Analytics. Это технические файлы, которые помогают нам понимать, как пользователи взаимодействуют с сайтом.</p>
+      <p>Вы можете отключить использование cookie в настройках вашего браузера. Это не повлияет на возможность просмотра сайта, однако может ограничить некоторые функции.</p>
+    </div>
+
+    <div class="section">
+      <h2>6. Хранение и защита данных</h2>
+      <p>Данные из форм заявок хранятся в защищённой базе данных Supabase с включённой политикой Row Level Security (RLS). Доступ к данным имеет только администратор сайта.</p>
+      <p>Мы применяем разумные технические и организационные меры для защиты ваших данных от несанкционированного доступа, утраты или изменения.</p>
+      <p>Данные хранятся в течение срока, необходимого для выполнения целей, указанных в настоящей политике, но не более 2 лет с момента их получения.</p>
+    </div>
+
+    <div class="section">
+      <h2>7. Ваши права</h2>
+      <p>В отношении своих персональных данных вы имеете право:</p>
+      <ul>
+        <li>Запросить доступ к данным, которые мы о вас храним</li>
+        <li>Потребовать исправления неточных данных</li>
+        <li>Потребовать удаления ваших данных</li>
+        <li>Отозвать согласие на обработку данных в любой момент</li>
+      </ul>
+      <p>Для реализации любого из этих прав напишите нам на <a href="mailto:info@jimongroup.kz">info@jimongroup.kz</a>.</p>
+    </div>
+
+    <div class="section">
+      <h2>8. Ссылки на внешние сайты</h2>
+      <p>Сайт содержит ссылки на платформу <a href="https://jimongramm.com" target="_blank">jimongramm.com</a>. После перехода на внешний сайт действует политика конфиденциальности того ресурса. Мы не несём ответственности за политику третьих сторон.</p>
+    </div>
+
+    <div class="section">
+      <h2>9. Дети</h2>
+      <p>Сайт не предназначен для лиц младше 18 лет. Мы сознательно не собираем данные о детях. Если вам стало известно, что ребёнок предоставил нам свои данные без согласия родителей — сообщите нам, и мы удалим эти данные.</p>
+    </div>
+
+    <div class="section">
+      <h2>10. Изменения политики</h2>
+      <p>Мы можем обновлять настоящую политику конфиденциальности. Дата последнего обновления указана в верхней части страницы. Рекомендуем периодически проверять эту страницу.</p>
+    </div>
+
+    <div class="contact-block">
+      <h2>Контакты</h2>
+      <p>По вопросам конфиденциальности и обработки персональных данных:</p>
+      <p style="margin-top:8px;">📧 <a href="mailto:info@jimongroup.kz">info@jimongroup.kz</a></p>
+      <p>🌐 <a href="https://jimongroup.kz" target="_blank">jimongroup.kz</a></p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 jimongroup.kz &nbsp;·&nbsp; <a href="/privacy.html">Политика конфиденциальности</a></p>
+  </footer>
+
+</body>
+</html>
