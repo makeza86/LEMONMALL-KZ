@@ -1429,6 +1429,60 @@
     });
   }
 </script>
+<!-- ══ MATRIX EFFECT ══ -->
+<canvas id="matrix-canvas" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:0;transition:opacity 1s;"></canvas>
+<script>
+(function(){
+  const c = document.getElementById('matrix-canvas');
+  const ctx = c.getContext('2d');
+  const chars = '金木水火土健康平衡气血阴阳五行龙凤鹏生命智慧自然道德仁义礼智信';
+  const fs = 18;
+  let drops = [];
+  let animId;
 
+  function resize(){
+    c.width = window.innerWidth;
+    c.height = window.innerHeight;
+    drops = Array.from({length: Math.floor(c.width/fs)}, () => Math.floor(Math.random()*-30));
+  }
+
+  function draw(){
+    ctx.fillStyle = 'rgba(6,10,14,0.15)';
+    ctx.fillRect(0,0,c.width,c.height);
+    ctx.font = fs+'px monospace';
+    for(let i=0;i<drops.length;i++){
+      const ch = chars[Math.floor(Math.random()*chars.length)];
+      const y = drops[i]*fs;
+      if(Math.random()>0.9){ ctx.fillStyle='#ffffff'; ctx.shadowColor='#4ade80'; ctx.shadowBlur=12; }
+      else { ctx.fillStyle='#4ade80'; ctx.shadowColor='#4ade80'; ctx.shadowBlur=6; }
+      ctx.fillText(ch, i*fs, y);
+      ctx.shadowBlur=0;
+      if(y>c.height && Math.random()>0.97) drops[i]=0;
+      drops[i]++;
+    }
+  }
+
+  function startMatrix(){
+    c.style.opacity='0.18';
+    if(!animId) animId = setInterval(draw, 50);
+  }
+
+  function stopMatrix(){
+    c.style.opacity='0';
+    setTimeout(()=>{ if(animId){ clearInterval(animId); animId=null; ctx.clearRect(0,0,c.width,c.height); } }, 1000);
+  }
+
+  resize();
+  window.addEventListener('resize', resize);
+
+  const target = document.getElementById('store');
+  if(target){
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e => e.isIntersecting ? startMatrix() : stopMatrix());
+    }, {threshold: 0.1});
+    obs.observe(target);
+  }
+})();
+</script>
 </body>
 </html>
