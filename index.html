@@ -1030,52 +1030,54 @@
       </div>
 
       <div class="lead-form-card">
-        <div class="lead-grid" id="lead-fields">
-          <div class="lead-field">
-            <label>Имя и фамилия <span>*</span></label>
-            <input type="text" id="f-name" placeholder="Алексей Иванов" required />
+           <div id="lead-form-wrap">
+          <div class="lead-grid">
+            <div class="lead-field">
+              <label>Имя и фамилия <span>*</span></label>
+              <input type="text" id="f-name" placeholder="Алексей Иванов" required />
+            </div>
+            <div class="lead-field">
+              <label>Возраст <span>*</span></label>
+              <input type="number" id="f-age" min="16" max="85" placeholder="Ваш возраст" required />
+            </div>
+            <div class="lead-field">
+              <label>Пол <span>*</span></label>
+              <select id="f-gender" required>
+                <option value="">Выберите</option>
+                <option>Женщина</option>
+                <option>Мужчина</option>
+              </select>
+            </div>
+            <div class="lead-field">
+              <label>Страна <span>*</span></label>
+              <input type="text" id="f-country" placeholder="Казахстан" required />
+            </div>
+            <div class="lead-field">
+              <label>Город <span>*</span></label>
+              <input type="text" id="f-city" placeholder="Алматы" required />
+            </div>
+            <div class="lead-field">
+              <label>Профессия / род деятельности <span>*</span></label>
+              <input type="text" id="f-job" placeholder="Предприниматель, врач, студент..." required />
+            </div>
+            <div class="lead-field full">
+              <label>WhatsApp или другой контакт <span>*</span></label>
+              <input type="text" id="f-contact" placeholder="+7 700 000 00 00 / @username / email" required />
+            </div>
           </div>
-          <div class="lead-field">
-            <label>Возраст <span>*</span></label>
-            <input type="number" id="f-age" min="16" max="85" placeholder="Ваш возраст" required />
-          </div>
-          <div class="lead-field">
-            <label>Пол <span>*</span></label>
-            <select id="f-gender" required>
-              <option value="">Выберите</option>
-              <option>Женщина</option>
-              <option>Мужчина</option>
-            </select>
-          </div>
-          <div class="lead-field">
-            <label>Страна <span>*</span></label>
-            <input type="text" id="f-country" placeholder="Казахстан" required />
-          </div>
-          <div class="lead-field">
-            <label>Город <span>*</span></label>
-            <input type="text" id="f-city" placeholder="Алматы" required />
-          </div>
-          <div class="lead-field">
-            <label>Профессия / род деятельности <span>*</span></label>
-            <input type="text" id="f-job" placeholder="Предприниматель, врач, студент..." required />
-          </div>
-          <div class="lead-field full">
-            <label>WhatsApp или другой контакт <span>*</span></label>
-            <input type="text" id="f-contact" placeholder="+7 700 000 00 00 / @username / email" required />
+          <div class="lead-footer">
+            <div class="lead-note">
+              Все поля обязательны. Данные защищены и не передаются третьим лицам.
+            </div>
+            <button class="btn-neon btn-neon-gold" onclick="submitLead()">
+              Отправить заявку →
+            </button>
           </div>
         </div>
 
-        <div class="lead-footer">
-          <div class="lead-note">
-            Все поля обязательны. Данные защищены и не передаются третьим лицам.
-          </div>
-          <button class="btn-neon btn-neon-gold" onclick="submitLead()">
-            Отправить заявку →
-          </button>
-        </div>
         <div id="lead-success">
-          <h3 style="font-size:20px; font-weight:700; color:#4ade80; margin-bottom:8px;">🎉 Заявка принята!</h3>
-          <p style="font-size:14px; color:#a0b0c0;">Куратор вашего региона свяжется с вами в ближайшее время.<br>Спасибо, что выбрали JIMON GROUP & JimonGramm.</p>
+          <h3>🎉 Заявка принята!</h3>
+          <p>Куратор вашего региона свяжется с вами в ближайшее время.<br>Спасибо, что выбрали JIMON GROUP & JimonGramm.</p>
         </div>
       </div>
     </div>
@@ -1325,9 +1327,9 @@
   /* ── LEAD FORM ── */
   // Сброс формы при загрузке
   window.addEventListener('load', function(){
-    var lf = document.getElementById('lead-fields');
+    var lf = document.getElementById('lead-form-wrap');
     var ls = document.getElementById('lead-success');
-    if(lf) lf.style.display='grid';
+    if(lf) lf.style.display='block';
     if(ls) ls.style.display='none';
   });
 
@@ -1360,11 +1362,11 @@
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify(data)
     }).then(function(r){ return r.json(); }).then(function(){
-      document.getElementById('lead-fields').style.display='none';
+      document.getElementById('lead-form-wrap').style.display='none';
       document.getElementById('lead-success').style.display='block';
       if(btn){ btn.textContent='Отправить заявку →'; btn.disabled=false; }
     }).catch(function(){
-      document.getElementById('lead-fields').style.display='none';
+      document.getElementById('lead-form-wrap').style.display='none';
       document.getElementById('lead-success').style.display='block';
       if(btn){ btn.textContent='Отправить заявку →'; btn.disabled=false; }
     });
