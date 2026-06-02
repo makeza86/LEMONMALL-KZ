@@ -951,7 +951,7 @@
         <div class="pen-avatar-wrap">
           <div class="pen-pulse"></div>
           <div class="pen-pulse2"></div>
-          <img src="images/pen-avatar.png" alt="Пэн" class="pen-avatar" style="object-fit:cover;" />
+          <div class="pen-avatar">鹏</div>
         </div>
       </div>
       <div class="pen-content">
@@ -1324,6 +1324,14 @@
   }
 
   /* ── LEAD FORM ── */
+  // Сброс формы при загрузке
+  window.addEventListener('load', function(){
+    var lf = document.getElementById('lead-fields');
+    var ls = document.getElementById('lead-success');
+    if(lf) lf.style.display='grid';
+    if(ls) ls.style.display='none';
+  });
+
   function submitLead() {
     var fields = ['f-name','f-age','f-gender','f-country','f-city','f-job','f-contact'];
     var data = {};
@@ -1340,6 +1348,9 @@
     });
     if(!valid){ alert('Пожалуйста, заполните все обязательные поля.'); return; }
 
+    var btn = document.querySelector('.btn-neon-gold');
+    if(btn){ btn.textContent='Отправляем...'; btn.disabled=true; }
+
     var visitor = JSON.parse(localStorage.getItem('jg_visitor')||'{}');
     data['ref'] = 'MAX';
     data['source'] = 'jimongroup_landing';
@@ -1349,13 +1360,14 @@
       method: 'POST',
       headers: {'Content-Type':'application/json'},
       body: JSON.stringify(data)
-    }).then(function(){
+    }).then(function(r){ return r.json(); }).then(function(){
       document.getElementById('lead-fields').style.display='none';
       document.getElementById('lead-success').style.display='block';
+      if(btn){ btn.textContent='Отправить заявку →'; btn.disabled=false; }
     }).catch(function(){
-      // Fallback — показываем успех в любом случае
       document.getElementById('lead-fields').style.display='none';
       document.getElementById('lead-success').style.display='block';
+      if(btn){ btn.textContent='Отправить заявку →'; btn.disabled=false; }
     });
   }
 </script>
