@@ -959,16 +959,6 @@
             <input type="text" id="m-name" placeholder="Как вас зовут?" oninput="checkModal()" />
           </div>
           <div class="modal-field">
-            <label>Язык общения</label>
-            <select id="m-lang" onchange="checkModal()">
-              <option value="">Выберите</option>
-              <option value="ru">Русский</option>
-              <option value="kz">Қазақша</option>
-              <option value="en">English</option>
-              <option value="zh">中文</option>
-            </select>
-          </div>
-          <div class="modal-field">
             <label>Страна</label>
             <input type="text" id="m-country" placeholder="Казахстан" oninput="checkModal()" />
           </div>
@@ -1345,7 +1335,7 @@
 
   function checkModal() {
     var name = document.getElementById('m-name').value.trim();
-    var lang = document.getElementById('m-lang').value;
+    var lang = localStorage.getItem('jg_lang') || 'ru';
     var country = document.getElementById('m-country').value.trim();
     var city = document.getElementById('m-city').value.trim();
     var btn = document.getElementById('modal-enter-btn');
@@ -1360,7 +1350,7 @@
     var btn = document.getElementById('modal-enter-btn');
     if(btn.classList.contains('disabled')) return;
     var name = document.getElementById('m-name').value.trim();
-    var lang = document.getElementById('m-lang').value;
+    var lang = localStorage.getItem('jg_lang') || 'ru';
     var country = document.getElementById('m-country').value.trim();
     var city = document.getElementById('m-city').value.trim();
 
