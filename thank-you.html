@@ -10,6 +10,15 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2SBBFBYH8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D2SBBFBYH8', { page_title: document.title, page_path: window.location.pathname });
+  </script>
+
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -30,7 +39,6 @@
       background-position: 0 0, 0 0, 0 0, 11px 11px;
     }
 
-    /* Конфетти — зелёное */
     .confetti {
       position: fixed; inset: 0; pointer-events: none;
       background-image:
@@ -69,7 +77,6 @@
       to { transform: translateY(0) scale(1); opacity: 1; }
     }
 
-    /* Вращающийся значок */
     .badge {
       width: 76px; height: 76px;
       border-radius: 50%;
@@ -79,9 +86,7 @@
       box-shadow: 0 0 30px rgba(74,222,128,0.7), 0 0 60px rgba(74,222,128,0.3);
       animation: spinLight 5s linear infinite;
     }
-    @keyframes spinLight {
-      to { transform: rotate(360deg); }
-    }
+    @keyframes spinLight { to { transform: rotate(360deg); } }
     .badge-inner {
       width: 58px; height: 58px;
       border-radius: 50%;
@@ -179,34 +184,147 @@
       <div class="badge-inner">✦</div>
     </div>
 
-    <h1>Заявка принята!</h1>
+    <h1 id="t-title">Заявка принята!</h1>
 
-    <div class="subtitle">
+    <div class="subtitle" id="t-subtitle">
       Куратор вашего региона из <strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong><br>
       свяжется с вами в ближайшее время.
     </div>
 
-    <div class="highlight">
+    <div class="highlight" id="t-highlight">
       Добро пожаловать в экосистему будущего 🌿<br>
       Вы сделали правильный шаг — впереди много интересного.
     </div>
 
-    <div class="small">
+    <div class="small" id="t-small">
       Пока ждёте — можете познакомиться с ИИ-консультантом Пэн.<br>
       Она ответит на вопросы о здоровье прямо сейчас, бесплатно.
     </div>
 
     <div class="buttons">
-      <a href="https://jimongroup.kz" class="btn-main">
-        ← Вернуться на сайт
-      </a>
-      <a href="https://jimongramm.com" target="_blank" class="btn-ghost">
-        🧠 Поговорить с Пэн
-      </a>
+      <a href="/" class="btn-main" id="t-btn-back">← Вернуться на сайт</a>
+      <a href="https://jimongramm.com" target="_blank" class="btn-ghost" id="t-btn-pen">🧠 Поговорить с Пэн</a>
     </div>
 
     <div class="brand-tag">JIMON GROUP × JimonGramm</div>
   </div>
+
+<script>
+const TRANSLATIONS = {
+  ru: {
+    title: 'Заявка принята!',
+    subtitle: 'Куратор вашего региона из <strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong><br>свяжется с вами в ближайшее время.',
+    highlight: 'Добро пожаловать в экосистему будущего 🌿<br>Вы сделали правильный шаг — впереди много интересного.',
+    small: 'Пока ждёте — можете познакомиться с ИИ-консультантом Пэн.<br>Она ответит на вопросы о здоровье прямо сейчас, бесплатно.',
+    back: '← Вернуться на сайт',
+    pen: '🧠 Поговорить с Пэн',
+    backUrl: '/'
+  },
+  kz: {
+    title: 'Өтінім қабылданды!',
+    subtitle: '<strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong> экожүйесінен<br>аймақтың кураторы жақын арада сізбен байланысады.',
+    highlight: 'Болашақ экожүйесіне қош келдіңіз 🌿<br>Сіз дұрыс қадам жасадыңыз — алда көп қызықты нәрселер бар.',
+    small: 'Күткенде — ЖИ-кеңесші Пэнмен танысуға болады.<br>Ол денсаулық сұрақтарына қазір, тегін жауап береді.',
+    back: '← Сайтқа оралу',
+    pen: '🧠 Пэнмен сөйлесу',
+    backUrl: '/kz/'
+  },
+  en: {
+    title: 'Request received!',
+    subtitle: 'Your regional curator from <strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong><br>will contact you shortly.',
+    highlight: 'Welcome to the ecosystem of the future 🌿<br>You made the right step — there\'s a lot of great things ahead.',
+    small: 'While you wait — meet AI consultant Peng.<br>She\'ll answer your health questions right now, for free.',
+    back: '← Back to site',
+    pen: '🧠 Talk to Peng',
+    backUrl: '/en/'
+  },
+  zh: {
+    title: '申请已收到！',
+    subtitle: '来自<strong style="color:#e2e8f0">金木集团 & JimonGramm</strong>的<br>您所在地区导师将很快与您联系。',
+    highlight: '欢迎加入未来的生态系统 🌿<br>您迈出了正确的一步——前方有很多精彩的事情。',
+    small: '等待期间——与AI顾问彭见面吧。<br>她现在就能免费回答您的健康问题。',
+    back: '← 返回网站',
+    pen: '🧠 与彭交流',
+    backUrl: '/zh/'
+  },
+  tr: {
+    title: 'Başvuru alındı!',
+    subtitle: '<strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong>\'dan<br>bölgenizdeki küratör yakında sizinle iletişime geçecek.',
+    highlight: 'Geleceğin ekosistemine hoş geldiniz 🌿<br>Doğru adımı attınız — önünüzde çok güzel şeyler var.',
+    small: 'Beklerken — AI danışmanı Peng ile tanışın.<br>Sağlık sorularınızı şimdi, ücretsiz yanıtlar.',
+    back: '← Siteye dön',
+    pen: '🧠 Peng ile konuş',
+    backUrl: '/tr/'
+  },
+  mn: {
+    title: 'Өргөдөл хүлээн авлаа!',
+    subtitle: '<strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong>-аас<br>таны бүс нутгийн куратор удахгүй тантай холбогдоно.',
+    highlight: 'Ирээдүйн экосистемд тавтай морил 🌿<br>Та зөв алхам хийлээ — өмнө нь олон сонирхолтой зүйл байна.',
+    small: 'Хүлээж байхдаа — AI зөвлөх Пэнтэй танилцаарай.<br>Тэр одоо, үнэгүй эрүүл мэндийн асуултад хариулна.',
+    back: '← Сайт руу буцах',
+    pen: '🧠 Пэнтэй ярих',
+    backUrl: '/mn/'
+  },
+  uz: {
+    title: 'Ariza qabul qilindi!',
+    subtitle: '<strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong>dan<br>hududingiz kuratori tez orada siz bilan bog\'lanadi.',
+    highlight: 'Kelajak ekotizimiga xush kelibsiz 🌿<br>Siz to\'g\'ri qadam qo\'ydingiz — oldinda ko\'p qiziqarli narsalar bor.',
+    small: 'Kutayotganingizda — AI maslahatchi Peng bilan tanishing.<br>U hozir, bepul sog\'liq savollaringizga javob beradi.',
+    back: '← Saytga qaytish',
+    pen: '🧠 Peng bilan gaplashish',
+    backUrl: '/uz/'
+  },
+  tj: {
+    title: 'Дархост қабул шуд!',
+    subtitle: 'Куратори минтақаи шумо аз <strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong><br>ба зудӣ бо шумо тамос мегирад.',
+    highlight: 'Хуш омадед ба экосистемаи оянда 🌿<br>Шумо қадами дурустро гузоштед — пеш бисёр чизҳои ҷолиб интизор аст.',
+    small: 'Ҳангоми интизорӣ — бо мушовири ЗС Пэн шинос шавед.<br>Вай ҳоло, ройгон ба саволҳои тандурустӣ ҷавоб медиҳад.',
+    back: '← Бозгашт ба сомона',
+    pen: '🧠 Бо Пэн гуфтугӯ кардан',
+    backUrl: '/tj/'
+  },
+  ua: {
+    title: 'Заявку прийнято!',
+    subtitle: 'Куратор вашого регіону з <strong style="color:#e2e8f0">JIMON GROUP & JimonGramm</strong><br>зв\'яжеться з вами найближчим часом.',
+    highlight: 'Ласкаво просимо до екосистеми майбутнього 🌿<br>Ви зробили правильний крок — попереду багато цікавого.',
+    small: 'Поки чекаєте — познайомтеся з AI-консультантом Пен.<br>Вона відповість на питання про здоров\'я прямо зараз, безкоштовно.',
+    back: '← Повернутися на сайт',
+    pen: '🧠 Поговорити з Пен',
+    backUrl: '/ua/'
+  }
+};
+
+(function() {
+  // Определяем язык из localStorage
+  var lang = localStorage.getItem('jg_lang') || 'ru';
+  // Если язык не поддерживается — используем RU
+  if (!TRANSLATIONS[lang]) lang = 'ru';
+
+  var t = TRANSLATIONS[lang];
+
+  document.getElementById('t-title').textContent = t.title;
+  document.getElementById('t-subtitle').innerHTML = t.subtitle;
+  document.getElementById('t-highlight').innerHTML = t.highlight;
+  document.getElementById('t-small').innerHTML = t.small;
+  document.getElementById('t-btn-back').innerHTML = t.back;
+  document.getElementById('t-btn-back').href = t.backUrl;
+  document.getElementById('t-btn-pen').innerHTML = t.pen;
+
+  // Обновляем title страницы
+  var titles = {
+    ru: 'Заявка отправлена',
+    kz: 'Өтінім жіберілді',
+    en: 'Request submitted',
+    zh: '申请已提交',
+    tr: 'Başvuru gönderildi',
+    mn: 'Өргөдөл илгээгдлээ',
+    uz: 'Ariza yuborildi',
+    tj: 'Дархост фиристода шуд',
+    ua: 'Заявку надіслано'
+  };
+  document.title = (titles[lang] || titles.ru) + ' — JIMON GROUP & JimonGramm';
+})();
+</script>
 
 </body>
 </html>
