@@ -5,7 +5,7 @@
   <!-- RU — дефолт -->
   <url>
     <loc>https://jimongroup.kz/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
@@ -23,7 +23,7 @@
   <!-- KK — Қазақша -->
   <url>
     <loc>https://jimongroup.kz/kz/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
@@ -41,7 +41,7 @@
   <!-- EN — English -->
   <url>
     <loc>https://jimongroup.kz/en/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
@@ -59,7 +59,7 @@
   <!-- ZH — 中文 -->
   <url>
     <loc>https://jimongroup.kz/zh/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
     <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
@@ -77,7 +77,7 @@
   <!-- TR — Türkçe -->
   <url>
     <loc>https://jimongroup.kz/tr/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
@@ -95,7 +95,7 @@
   <!-- MN — Монгол -->
   <url>
     <loc>https://jimongroup.kz/mn/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
@@ -113,7 +113,7 @@
   <!-- UZ — O'zbekcha -->
   <url>
     <loc>https://jimongroup.kz/uz/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
@@ -131,7 +131,7 @@
   <!-- TG — Тоҷикӣ -->
   <url>
     <loc>https://jimongroup.kz/tj/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
@@ -149,7 +149,7 @@
   <!-- UK — Українська -->
   <url>
     <loc>https://jimongroup.kz/ua/</loc>
-    <lastmod>2026-06-03</lastmod>
+    <lastmod>2026-06-12</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
     <xhtml:link rel="alternate" hreflang="ru"   href="https://jimongroup.kz/"/>
